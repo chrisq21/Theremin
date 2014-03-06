@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>SoundPole</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src='leapjs-master/leap.js'></script>
+    <script src='javascript/tuna/tuna.js'></script>
+    <script src="javascript/oscillator.js"></script>    
+    <script src="javascript/web_audio.js"></script>    
+    <script src='teoria/dist/teoria.js'></script>
+    
+</head>
+<script>
+    $(document).ready(function() {
+        
+    }); 
+</script>
+<body>
+    <div id='container'>
+        <canvas id='canvas'></canvas>
+        <img id='theremin' src="theremin.jpg" alt="">
+        <div id='controls'>
+            <button id='stop_btn'>Stop!</button>
+        	<label id='coords'></label>
+            <br>
+            <label><b>Volume</b></label>
+            <input id='volume_slider' type="range" min='0' max = '10'> 
+            <br>
+            <label><b>Effects</b></label>
+            <select id="effects">
+                <option value="Tremolo">Tremolo</option>
+                <option value="Chorus">Chorus</option>
+                <option value="Phaser">Phaser</option>
+            </select>
+            <br>
+            <label><b>Effect Slider</b></label>
+            <input id='effect_slider' type="range" min='1' max = '10'> 
+            </br>
+        	<label id='freq'>Hello</label>
+        </div>    
+        <div id='music_area'></div>            
+
+    </div>
+</body>
+</html>
